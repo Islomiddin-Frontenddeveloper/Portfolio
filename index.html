@@ -5,57 +5,220 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
  <!-- Header  -->
- <header class="main-header">
-   <nav class="main-sitenav">
-     <ul class="sitenav-items">
-       <li class="sitenav-item">
-         <a href="#">Asosiy</a>
-       </li>
-       <li class="sitenav-item">
-         <a href="#">Men haqimda</a>
-       </li>
-       <li class="sitenav-item">
-         <a href="#">Xizmatlar</a>
-       </li>
-       <li class="sitenav-item">
-         <a href="#">Mijozlar</a>
-       </li>
-       <li class="sitenav-item">
-         <a href="#">Portfolio</a>
-       </li>
-       <li class="sitenav-item">
-         <a href="#">Blog</a>
-       </li>
-       <li class="sitenav-item">
-         <a href="#">Sheriklar</a>
-       </li>
-     </ul>
-   </nav>
- </header>
+ <div class="container">
+     <header class="site-header">
+         <div class="site-header-logo">
+             <a href="index.html">
+                 <img class="logo-img" src="img/logo.jpg" alt="Logo">
+             </a>
+         </div>
+         <nav class="sitenav">
+             <ul class="sitenav-items">
+                 <li class="sitenav-item">
+                     <a href="#">Asosiy</a>
+                 </li>
+                 <li class="sitenav-item">
+                     <a href="#">Men haqimda</a>
+                 </li>
+                 <li class="sitenav-item">
+                     <a href="#">Xizmatlar</a>
+                 </li>
+                 <li class="sitenav-item">
+                     <a href="#">Mijozlar</a>
+                 </li>
+                 <li class="sitenav-item">
+                     <a href="#">Portfolio</a>
+                 </li>
+                 <li class="sitenav-item">
+                     <a href="#">Blog</a>
+                 </li>
+                 <li class="sitenav-item">
+                     <a href="#">Sheriklar</a>
+                 </li>
+             </ul>
+         </nav>
+     </header>
+ </div>
 
  <!-- Main -->
- <section class="main-section">
-   <h1>Asosiy qism</h1>
- </section>
+<div class="container">
+    <section class="site-section">
+        <div class="site-section-info">
+            <h4 class="site-section-welcome to-uppercase">Salom hammaga</h4>
+            <h1 class="site-section-introduction to-uppercase"> I am Oripov</h1>
+            <h3 class="site-section-position to-uppercase"> Havaskor dasturchi & Talaba</h3>
+            <div class="site-section-social-networks">
+                <a href="https://t.me/Islomiddin_Oripov">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://www.facebook.com/islomiddin.oripov">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://whatsapp.com/islomiddin">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https:/https://www.instagram.com/islomiddin.2001">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+            <button type="button" class="site-section-action button to-uppercase">
+                Ishlarimni ko'ring
+            </button>
+        </div>
+        <div >
+            <img class="site-section-image" src="Img/Islomiddin.png" alt="My image">
+        </div>
+    </section>
+    <div class="clearfix"></div>
+</div>
+
+
+ <!--Statistics-->
+ <div class="container">
+     <section class="statistics">
+         <div class="statistics-item">
+             <h3 class="statistics-number">
+                5k+
+             </h3>
+             <p class="statistics-title">
+                 Hursand mijozlar
+             </p>
+         </div>
+         <div class="statistics-item">
+             <h3 class="statistics-number">
+                 12k+
+             </h3>
+             <p class="statistics-title">
+                 Yordam
+             </p>
+         </div>
+         <div class="statistics-item">
+             <h3 class="statistics-number">
+                 5/10
+             </h3>
+             <p class="statistics-title">
+                 O'rtacha reyting
+             </p>
+         </div>
+     </section>
+
+ </div>
+
 
  <!-- About me -->
- <section class="about-me">
-   <h1>About me</h1>
+ <div class="container">
+  <section class="about-me">
+    <div class="about-me-image">
+      <img src="/Img/Islomiddin.png" alt="Aboutme image">
+    </div>
+    <div class="about-me-info">
+       <h5 class="section-subtitle">
+         Men haqimda
+         <span class="blur-line"></span>
+       </h5>
+       <h3 class="section-title">
+         Havaskor dasturchi
+       </h3>
+       <p class="about-me-description">
+         Menin ismim Islomiddin 2001 yilda tug'ilganman.Hozirda Andijon davlat universiteti 3-kurs talabasiman.2022 yil fevral oyidan beri  Muhammadjovohirbek Suratovning frontend dasturlash kursini o'qib kelmoqdaman.
+       </p>
+       <button type="button" class="button to-uppercise">
+         CV ko'chirib olish
+       </button>
+    </div>
  </section>
+ <div class="clearfix"></div>
+ </div>
 
  <!-- Services section -->
- <section class="sevices">
-   <h1>Mening xizmatlarim</h1>
- </section>
+ <div class="container">
+  <section class="services">
+    <h5 class="section-subtitle">
+      Mening xizmatlarim
+      <span class="blur-line"></span>
+    </h5>>
+    <h2 class="section-title">
+      Men taklif <br>
+      qiladigan xizmatlar
+    </h2>
+    <div class="services-cards">
+      <div class="service-card">
+        <img class="service-card-icon" src="./Img/service-1.png" alt="service 1">
+        <h5 class="service-card-title">Web dasturlash</h5>
+        <p class="service-card-description">
+           Savollaringizga to'liq javoblar va birinchi web saytingizni yaratishingiz uchun kerakli barcha resurslar
+        </p>
+        <a class="service-card-link" href="#">Ko'proq</a>
+      </div>
+      <div class="service-card">
+       <img class="service-card-icon" src="./Img/service-2.png" alt="service 2">
+       <h5 class="service-card-title">Web dasturlash</h5>
+       <p class="service-card-description">
+          Savollaringizga to'liq javoblar va birinchi web saytingizni yaratishingiz uchun kerakli barcha resurslar
+       </p>
+       <a class="service-card-link" href="#">Ko'proq</a>
+     </div>
+     <div class="service-card">
+       <img class="service-card-icon" src="./Img/service-3.png" alt="service 3">
+       <h5 class="service-card-title">Web dasturlash</h5>
+       <p class="service-card-description">
+          Savollaringizga to'liq javoblar va birinchi web saytingizni yaratishingiz uchun kerakli barcha resurslar
+       </p>
+       <a class="service-card-link" href="#">Ko'proq</a>
+     </div>
+    </div>
+  </section>
+ </div>
 
  <!-- Clients -->
-<section class="clients">
-  <h1>Mening mijozlarim</h1>
-</section>
+<div class="container">
+  <section class="clients">
+    <h5 class="section-subtitle">
+      Mening mijozlarim
+      <span class="blur-line"></span>
+    </h5>
+    <h2 class="section-title">
+      Hurmatli mijozlarim<br>
+      men haqimda fikrlari
+    </h2>
+    <div class="client-items">
+      <div class="client-item">
+        <div class="client-item-img">
+          <img src="img/about-me.png" alt="Client image">
+        </div>
+        <div class="client-items-info">
+          <h3 class="client-item-name">
+            Abbosbek Abdujabborov
+          </h3>
+          <p class="client-item-position">
+            Back end dasturchi
+          </p>
+          <p class="client-item-review">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugit laboriosam harum deleniti laudantium sequi, recusandae neque explicabo quae ut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorum. Blanditiis, veritatis. Est fugit nisi fugiat, necessitatibus quia asperiores perspiciatis!
+          </p>
+          <div class="client-item-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star disabled"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+</div>
 
 <!-- Portfolio -->
 <section class="portfolio">
