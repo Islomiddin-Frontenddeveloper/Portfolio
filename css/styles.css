@@ -37,6 +37,8 @@ body{
 
 .blur-line{
     display: inline-block;
+    position: relative;
+    top: -2px;
     margin-left: 5px;
     width: 80px;
     height: 4px;
@@ -58,6 +60,16 @@ body{
 
 
      /*Site header*/
+.site-header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 10;
+     }
 .site-header-logo{
     display: inline-block;
     vertical-align: middle;
@@ -96,208 +108,311 @@ body{
 
 
  /*Main section*/
-    .site-section{
-        padding: 100px 30px;
-    }
+.site-section{
+    padding: 100px 30px;
+}
 
-    .site-section>div{
-        width: 50%;
-        float: left;
-    }
+.site-section>div{
+    width: 50%;
+    float: left;
+}
 
-    .site-section-image{
-        text-align: right;
-        width: 350px;
-        margin-left: 250px;
-    }
+.site-section-image{
+    text-align: right;
+    width: 350px;
+    margin-left: 250px;
+}
 
-    .site-section-welcome{
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 20px;
-        letter-spacing: 2px;
-        color: #9abaed;
-    }
+.site-section-welcome{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #9abaed;
+}
 
-    .site-section-introduction{
-        margin-top: 20px;
-        font-size: 60px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        color: #05364E;
-    }
+.site-section-introduction{
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #05364E;
+}
 
-    .site-section-position{
-        color: #05364E;
-        font-size: 24px;
-        font-weight: 300px;
-        margin-bottom: 20px;
-    }
+.site-section-position{
+    color: #05364E;
+    font-size: 24px;
+    font-weight: 300px;
+    margin-bottom: 20px;
+}
 
-    .site-section-social-networks a{
-        color: #8FA1AA;
-        font-size: 20px;
-        display: inline-block;
-        margin-right: 16px;
-        cursor: pointer;
-    }
+.site-section-social-networks a{
+    color: #8FA1AA;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+}
 
 
-    .site-section-social-networks a:hover i{
-        color: #1C44E4;
-    }
-    .site-section-action{
-        margin-top: 30px;
-    }
+.site-section-social-networks a:hover i{
+    color: #1C44E4;
+}
+
+.site-section-action{
+    margin-top: 30px;
+}
 
 
     /*Statistics*/
-    .statistics {
-        padding-top: 10px;
-    }
+.statistics {
+    padding-top: 10px;
+}
 
-    .statistics-item {
-        display: inline-block;
-        width: 150px;
-        background-color: #F8FAFF;
-        text-align: center;
-        padding: 5px 10px;
-        margin-right: 20px;
-    }
+.statistics-item {
+    display: inline-block;
+    width: 150px;
+    background-color: #F8FAFF;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
 
-    .statistics-number {
-        font-size: 27px;
-        margin-bottom: 5px;
-        color: #1C44E4;
-    }
+.statistics-number {
+    font-size: 27px;
+    margin-bottom: 5px;
+    color: #1C44E4;
+}
 
-    .statistics-title{
-        font-size: 16px;
-        color: #797979;
-        font-weight: 300;
-    }
+.statistics-title{
+    font-size: 16px;
+    color: #797979;
+    font-weight: 300;
+}
 
 
     /* About me */
 
-    .about-me{
-        padding-top: 100px;
-    }
+.about-me{
+    padding-top: 100px;
+}
 
-    .about-me > div{
-        float: left;
-        width: 50%;
-    }
+.about-me > div{
+    float: left;
+    width: 50%;
+}
 
-    .about-me-image img{
-        width: 90%;
-        width: 350px;
-    }
+.about-me-image img{
+    margin-top: -40px;
+    width: 90%;
+    width: 350px;
+}
 
+.about-me-info{
+    margin-top: 30px;
+}
 
-    .about-me-description{
-        font-size: 14px;
-        font-weight: 300;
-        color: #797979;
-        line-height: 27px;
-    }
+.about-me-description{
+    font-size: 14px;
+    font-weight: 300;
+    color: #797979;
+    line-height: 27px;
+}
 
-    .about-me-action{
-        margin-top: 40px;
-    }
+.about-me-action{
+    margin-top: 40px;
+}
 
 
     /* Service-section  */
 
-    .services{
-        padding-top: 100px;
-    }
+.services{
+    padding-top: 100px;
+}
 
-    .service-card{
-        display: inline-block;
-        width: 30%;
-        padding: 60px 30px;
-        background-color: #f8faff;
-        margin-right: 3%;
-        text-align: center;
-        box-sizing: border-box;
-    }
+.service-card{
+    display: inline-block;
+    width: 30%;
+    padding: 60px 30px;
+    background-color: #f8faff;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
 
-    .service-card-title{
-        color: #05364d;
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
+.service-card-title{
+    color: #05364d;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
-    .service-card-description{
-        font-size: 14px;
-        line-height: 27px;
-        font-weight: 300;
-        color: #797979;
-    }
+.service-card-description{
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #797979;
+}
 
-    .service-card-link{
-        font-size: 13px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #05364d;
-    }
+.service-card-link{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364d;
+}
 
-    .service-card:hover{
-        background-color: #5f30ff;
-    }
+.service-card:hover{
+    background-color: #5f30ff;
+}
 
-    .service-card:hover .service-card-title,
-    .service-card:hover .service-card-description,
-    .service-card:hover .service-card-link{
-        color: #95f238;
-    }
+.service-card:hover .service-card-title,
+.service-card:hover .service-card-description,
+.service-card:hover .service-card-link{
+    color: #95f238;
+}
 
 
     /* My clients */
 
-    .clients{
-        padding-top: 100px;
-    }
+.clients{
+     padding-top: 100px;
+}
 
-    .client-item >div{
-        width: 50%;
-        float: left;
-        box-sizing: border-box;
-    }
+.client-item >div{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
 
-    .client-item-img img{
-        width: 100%;
-    }
+.client-item-img img{
+    width: 100%;
+}
 
-    .client-items-info{
-        padding-top: 50px;
-        padding-left: 50px;
-    }
+.client-items-info{
+    padding-top: 50px;
+    padding-left: 50px;
+}
 
-    .client-item-name{
-        font-size: 20px;
-        margin-bottom: 4px;
-    }
+.client-item-name{
+    font-size: 20px;
+    margin-bottom: 4px;
+}
 
-    .client-item-position{
-        font-size: 14px;
-        font-weight: 300;
-        color: #5b6d75;
-    }
+.client-item-position{
+    font-size: 14px;
+    font-weight: 300;
+    color: #5b6d75;
+}
 
-    .client-item-review{
-        font-size: 14px;
-        line-height: 27px;
-        font-weight: 300;
-        color: #5b6d75;
-    }
+.client-item-review{
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #5b6d75;
+}
 
-    .client-item-rate{
-        color: #ffd805;
-    }
-    .disabled{
-        color: #aeb98e;
-    }
+.client-item-rate{
+    color: #ffd805;
+}
+
+.disabled{
+    color: #aeb98e;
+}
+
+
+    /* Portfolio */
+
+.portfolio{
+    padding: 100px 0;
+}
+
+.portfolio-filters{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.portfolio-filters li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.portfolio-filters li:hover,
+.portfolio-filters li.active{
+    color: #1345e6;
+}
+
+.portfolio-item{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-items{
+    position: relative;
+    margin-top: 50px;
+}
+
+.portfolio-item-img{
+    width: 100%;
+}
+
+.portfolio-item-1{
+padding-left: 0;
+}
+.portfolio-item-2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.portfolio-item-3{
+    position: absolute;
+    right: 0;
+    top: 322px;
+}
+
+.portfolio-item-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(19, 69, 230, 0.9);
+    visibility: hidden;
+    z-index: 1;
+}
+.portfolio-item-info{
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+.portfolio-item-info a{
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.portfolio-item:hover .portfolio-item-overlay{
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+}
+
+.portfolio-item:hover.portfolio-item-info{
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
+}
