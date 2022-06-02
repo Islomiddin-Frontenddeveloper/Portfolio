@@ -2,6 +2,7 @@
     /*Body*/
 body{
     font-family: sans-serif;
+    margin: 0;
 }
 
 .container{
@@ -49,13 +50,17 @@ body{
 
 .button{
     border: none;
-    background-color: blue;
+    background: linear-gradient(to right, #1345e6 0%,#ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
     color: #ffffff;
     font-weight: 500;
     font-size: 14px;
     padding: 20px 40px;
     cursor: pointer;
     border-radius: 7px;
+}
+.button:hover{
+    background-position: right center;
 }
 
 
@@ -108,6 +113,14 @@ body{
 
 
  /*Main section*/
+
+ .main-banner{
+    background: url(../Img/main-banner.png) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+ }
+
 .site-section{
     padding: 100px 30px;
 }
@@ -181,7 +194,9 @@ body{
 .statistics-number {
     font-size: 27px;
     margin-bottom: 5px;
-    color: #1C44E4;
+    background: linear-gradient( 90deg, red 0%, #0c18f5 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .statistics-title{
@@ -336,17 +351,16 @@ body{
 .portfolio-filters li {
     display: inline-block;
     margin-right: 40px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-
-.portfolio-filters li:hover,
 .portfolio-filters li.active{
-    color: #1345e6;
+    color: #1C44E4;
 }
+
 
 .portfolio-item{
     position: relative;
@@ -364,33 +378,50 @@ body{
 
 .portfolio-item-img{
     width: 100%;
+    opacity: 0.6;
+
+}
+
+.portfolio-item-img:hover{
+    opacity: 1;
+    border-radius: 26px;
 }
 
 .portfolio-item-1{
-padding-left: 0;
+    padding-left: 0;
+    transition: width 2s, height 4s;
+}
+
+.portfolio-item-1:hover{
+    width: 550px;
+    height: 860px;
+
 }
 .portfolio-item-2{
     position: absolute;
     right: 0;
     top: 0;
+    transition: width 2s, height 4s;
+    border-radius: 50%;
+}
+
+.portfolio-item-2:hover{
+    width: 530px;
+    height: 290px;
 }
 
 .portfolio-item-3{
     position: absolute;
     right: 0;
     top: 322px;
+    transition: width 2s, height 4s;
 }
 
-.portfolio-item-overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color:rgba(19, 69, 230, 0.9);
-    visibility: hidden;
-    z-index: 1;
+.portfolio-item-3:hover{
+    width: 530px;
+    height: 520px;
 }
+
 .portfolio-item-info{
     position: absolute;
     bottom: 44px;
@@ -415,4 +446,103 @@ padding-left: 0;
     visibility: visible;
     bottom: 24px;
     left: 60px;
+}
+
+
+/* Blog section */
+
+.blog{
+    padding-top: 100px;
+    width:100%;
+}
+
+.blog-items{
+    margin-top: 50px;
+}
+
+.blog-item{
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.blog-item:hover{
+    box-shadow: 0px 10px 20px rgba(252, 2, 56, 0.1);
+    cursor: pointer;
+}
+
+.blog-item:hover .blog-item-info{
+    background-color: rgb(237, 241, 241)
+}
+
+.blog-item-img img{
+    width: 100%;
+    opacity: 0.5;
+    transition: width 2s, height 4s;
+}
+
+.blog-item-img img:hover{
+    opacity: 1;
+    border-radius: 26px;
+    width: 330px;
+    height: 280px;
+}
+
+.blog-item-info{
+    background-color: #f8faff;
+    padding: 30px;
+    color: #797979;
+}
+
+.blog-item-main-info span{
+    font-size: 14px;
+    margin-right: 40px;
+    font-weight: lighter;
+}
+.blog-item-info i{
+    margin-right: 6px;
+}
+
+.blog-item-title{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #05364d;
+    font-weight: 700;
+}
+
+.blog-item-description{
+    line-height: 27px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.blog-item-learn-more{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(to right, #1345e6 0%,#ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.blog-item-learn-more:hover{
+    background-position: right center;
+}
+
+
+/* Partners */
+
+.partners{
+    padding-top: 100px;
+}
+
+.partner{
+    display: inline-block;
+    padding: 0 30px;
 }
